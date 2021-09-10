@@ -22,7 +22,7 @@ from . import *
 # ================================================#
 notmine = f"This bot is for {OWNER_NAME}"
 
-TLINK = "https://telegra.ph/file/d9c9bc13647fa1d96e764.jpg"
+TLINK = "https://telegra.ph/file/23a20f6b6523cf9bd2055.jpg"
 helps = get_string("inline_1")
 
 add_ons = udB.get("ADDONS")
@@ -60,10 +60,10 @@ _main_help_menu = [
 
 SUP_BUTTONS = [
     [
-        Button.url("Repo", url="https://github.com/TeamUltroid/Ultroid"),
-        Button.url("Addons", url="https://github.com/TeamUltroid/UltroidAddons"),
+        Button.url("UPDATES", url="https://t.me/MR_JINN_OF_TG"),
+        Button.url("SUPPORT", url="https://t.me/NAZRIYASUPPORT"),
     ],
-    [Button.url("Support", url="t.me/UltroidSupport")],
+    [Button.url("OWNER", url="https://t.me/THEREALMR_JINN_OF_TG")],
 ]
 
 # --------------------BUTTONS--------------------#
@@ -74,12 +74,12 @@ SUP_BUTTONS = [
 async def inline_alive(o):
     if len(o.text) == 0:
         b = o.builder
-        MSG = "• **Ultroid Userbot •**"
+        MSG = "• **NAZRIYA•**"
         uptime = time_formatter((time.time() - start_time) * 1000)
         MSG += f"\n\n• **Uptime** - `{uptime}`\n"
         MSG += f"• **OWNER** - `{OWNER_NAME}`"
         WEB0 = InputWebDocument(
-            "https://telegra.ph/file/55dd0f381c70e72557cb1.jpg", 0, "image/jpg", []
+            "https://telegra.ph/file/23a20f6b6523cf9bd2055.jpg", 0, "image/jpg", []
         )
         RES = [
             InputBotInlineResult(
@@ -438,7 +438,7 @@ async def on_plug_in_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} has no detailed help..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© @TeamUltroid"
+    reply_pop_up_alert += "\n© @MR_JINN_OF_TG"
     buttons = [
         [
             Button.inline(
@@ -497,7 +497,7 @@ async def on_plug_in_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} has no detailed help..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© @TeamUltroid"
+    reply_pop_up_alert += "\n© @MR_JINN_OF_TG"
     buttons = [
         [
             Button.inline(
